@@ -54,7 +54,7 @@ const Auth = () => {
                             {variant === 'login' ? 'Sign in' : 'Register'}
                         </h2>
                         <div className="flex flex-col gap-4">
-                            {/* Conditionally render inputs based on the variant */}
+                        
                             {variant === 'register' && (
                                 <Input   
                                     label="Name"
