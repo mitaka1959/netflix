@@ -3,9 +3,9 @@ import fetcher from "@/prisma/lib/fetcher";
 
 const useCurrentUser = () => {
     const { data, error, isLoading, mutate } = useSWR('/api/current', fetcher, {
-        revalidateOnFocus: true,  // Forces refetch when window regains focus
-        dedupingInterval: 0,      // Forces refetch every time
-        refreshInterval: 0,       // Disable automatic polling
+        revalidateOnFocus: true,  
+        dedupingInterval: 0,      
+        refreshInterval: 0,       
     });
 
     return { data, error, isLoading, mutate };
