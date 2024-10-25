@@ -53,7 +53,7 @@ export default NextAuth({
                     throw new Error('Incorrect password');
                 }
 
-                return user; // Return user if authentication is successful
+                return user; 
             }
         })
     ],
