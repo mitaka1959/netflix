@@ -6,10 +6,10 @@ import { useRouter } from "next/router";
 export async function getServerSideProps(context: NextPageContext) {
     const session = await getSession(context);
 
-    // Log the session for debugging
+    
     console.log('Session:', session);
 
-    // If no session, redirect to auth page
+    
     if (!session) {
         return {
             redirect: {
@@ -19,7 +19,7 @@ export async function getServerSideProps(context: NextPageContext) {
         };
     }
 
-    // If session exists, proceed to the profiles page
+    
     return {
         props: {},
     };
@@ -40,7 +40,7 @@ const Profiles = () => {
                         <div className="
                             w-44
                             h-44
-                            rounded-lg // Change to 'rounded-full' for a circular image
+                            rounded-lg 
                             flex
                             items-center
                             justify-center
@@ -53,7 +53,7 @@ const Profiles = () => {
                             <img 
                                 src="/images/profile.jpg" 
                                 alt="Profile" 
-                                className="w-full h-full object-cover rounded-lg" // Add rounded here
+                                className="w-full h-full object-cover rounded-lg" 
                             />
                         </div>
                     </div>
