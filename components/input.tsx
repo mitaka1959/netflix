@@ -37,7 +37,7 @@ const Input: React.FC<inputProps> = ({
             focus:ring-0
             peer
           "
-          placeholder=" " // Keep a single space here to activate peer styles
+          placeholder=" " 
         />
         <label
           className="
