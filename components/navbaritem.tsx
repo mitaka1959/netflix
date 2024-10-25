@@ -1,7 +1,7 @@
 import React from "react";
 
 interface NavbarItemProps {
-    label: string; // Corrected the property name here
+    label: string; 
 }
 
 const NavbarItem: React.FC<NavbarItemProps> = ({
