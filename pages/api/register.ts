@@ -4,7 +4,7 @@ import prismadb from "../../prisma/lib/prismadb";
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
     if (req.method !== 'POST') {
-        return res.status(405).end(); // Only allow POST requests
+        return res.status(405).end(); 
     }
 
     const { email, name, password } = req.body;
